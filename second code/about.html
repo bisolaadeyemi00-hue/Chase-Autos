@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Chase Autos</title>
+  <style>
+    :root {
+      --primary-color: #1f2937;
+      --accent-color: #fbbf24;
+      --background-color: #f9fafb;
+      --text-color: #111827;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery img {
+      width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    .back-home {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent-color);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home:hover {
+      background-color: #f59e0b;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Navigation -->
+  <header>
+    <div><a href="home page.html" style="color: white; text-decoration: none;"><strong>Chase Autos</strong></a></div>
+    <nav>
+      <a href="home page.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- 🏢 About Us Section -->
+  <div class="container">
+    <div class="section-title">Welcome to Chase Autos</div>
+    <div class="intro">
+      At Chase Autos, we believe luxury is more than a car — it's an experience. Based in OYO state, Nigeria, we specialize in high-end vehicles that combine elegance, performance, and exclusivity. Whether you're looking for a Rolls-Royce, Bugatti, Pagani, or a custom-built masterpiece, we deliver excellence with every detail.
+    </div>
+
+    <div class="features">
+      <h3>Why Choose Us</h3>
+      <ul>
+        <li>🚗 Premium inventory of luxury and exotic cars</li>
+        <li>🛠 Customization options for interior and exterior</li>
+        <li>📦 Worldwide shipping and delivery</li>
+        <li>💬 Personalized customer service and consultation</li>
+        <li>🔒 Secure transactions and verified ownership</li>
+        <li>🎯 Trusted by collectors and enthusiasts globally</li>
+      </ul>
+    </div>
+
+    <div class="section-title">Our Collection</div>
+    <div class="gallery">
+      <img src="first car.jpg" alt="BUGATTI LA VOITURE NOIRE" />
+      <img src="secondcar.jpg" alt="PAGANI HUAYRA" />
+      <img src="thirdcar.jpg" alt="PAGANI HUAYRA" />
+      <img src="thirdcar2.jpg" alt="Custom Luxury Car" />
+    </div>
+
+    <a href="home page.html" class="back-home">– Back to Home</a>
+  </div>
+
+  <!-- 📎 Footer -->
+  <footer>
+    © 2025 Chase Autos. All rights reserved.
+  </footer>
+
+</body>
+</html>

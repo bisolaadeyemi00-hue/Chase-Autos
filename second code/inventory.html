@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory - Chase Autos</title>
+  <style>
+    :root {
+      --primary-color: #1f2937;
+      --accent-color: #fbbf24;
+      --background-color: #f9fafb;
+      --text-color: #111827;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .inventory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .car-card {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .car-card:hover {
+      transform: scale(1.02);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-details {
+      padding: 1rem;
+    }
+
+    .car-details h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+    }
+
+    .car-details p {
+      margin: 0.5rem 0;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    .car-details a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: white;
+      background-color: var(--accent-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .car-details a:hover {
+      background-color: #f59e0b;
+    }
+
+    .back-home {
+      display: block;
+      margin: 3rem auto 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent-color);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home:hover {
+      background-color: #f59e0b;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Navigation -->
+  <header>
+    <div><a href="home page.html" style="color: white; text-decoration: none;"><strong>Chase Autos</strong></a></div>
+    <nav>
+      <a href="home page.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- 🚘 Inventory Section -->
+  <div class="container">
+    <div class="section-title">Our Luxury Collection</div>
+    <div class="inventory-grid">
+
+      <!-- Car 1 -->
+      <div class="car-card">
+        <img src="thirdcar2.jpg" alt="Rolls-Royce Ghost" />
+        <div class="car-details">
+          <h3>Rolls-Royce Ghost (2021+)</h3>
+          <p>$400,000 USD</p>
+          <a href="thirdcar.html">View More</a>
+        </div>
+      </div>
+
+      <!-- Car 2 -->
+      <div class="car-card">
+        <img src="secondcar.jpg" alt="Pagani Huayra" />
+        <div class="car-details">
+          <h3>Pagani Huayra</h3>
+          <p>$10.4 Million USD</p>
+          <a href="secondcar.html">View More</a>
+        </div>
+      </div>
+
+      <!-- Car 3 -->
+      <div class="car-card">
+        <img src="first car.jpg" alt="Bugatti La Voiture Noire" />
+        <div class="car-details">
+          <h3>Bugatti La Voiture Noire</h3>
+          <p>$18.7 Million USD</p>
+          <a href="firstcar.html">View More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="home page.html" class="back-home">– Back to Home</a>
+  </div>
+
+  <!-- 📎 Footer -->
+  <footer>
+    © 2025 Chase Autos. All rights reserved.
+  </footer>
+
+</body>
+</html>

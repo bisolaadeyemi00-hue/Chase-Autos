@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagani Huayra - Chase Autos</title>
+  <style>
+    :root {
+      --primary-color: #1f2937;
+      --accent-color: #fbbf24;
+      --background-color: #f9fafb;
+      --text-color: #111827;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .car-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+      margin: 1rem 0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery img {
+      width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    .specs {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .specs ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .specs li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .back-home {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent-color);
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .back-home:hover {
+      background-color: #f59e0b;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Navigation -->
+  <header>
+    <div><a href="index.html" style="color: white; text-decoration: none;"><strong>Chase Autos</strong></a></div>
+    <nav>
+      <a href="home page.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <!-- 🚗 Car Detail Section -->
+  <div class="container">
+    <div class="car-title">Pagani Huayra</div>
+    <img src="images/pagani-hero.jpg" alt="Pagani Huayra" class="hero-image" />
+    <div class="price">$10.4 Million USD</div>
+
+    <div class="full-image">
+        <img src="secondcar.jpg" alt="Pagani Huayra">
+    
+    </div>
+
+    <div class="specs">
+      <h3>Specifications</h3>
+      <ul>
+        <li>Engine: 6.0L Twin-Turbo V12</li>
+        <li>Horsepower: 720 HP</li>
+        <li>Top Speed: 238 mph</li>
+        <li>Transmission: 7-speed sequential</li>
+        <li>Fuel Type: Petrol</li>
+        <li>Doors: Gullwing</li>
+      </ul>
+    </div>
+
+    <div class="description">
+      The Pagani Huayra is a hypercar masterpiece, combining Italian artistry with cutting-edge engineering. Its gullwing doors, carbon fiber body, and roaring V12 engine make it one of the most exclusive and exhilarating cars ever built. Every detail is handcrafted for performance and luxury.
+    </div>
+
+    <a href="home page.html" class="back-home">← Back to Home</a>
+  </div>
+
+  <!-- 📎 Footer -->
+  <footer>
+    © 2025 Chase Autos. All rights reserved.
+  </footer>
+
+</body>
+</html>

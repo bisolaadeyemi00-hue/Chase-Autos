@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Chase Autos</title>
+  <style>
+    :root {
+      --primary-color: #1f2937;
+      --accent-color: #fbbf24;
+      --background-color: #f9fafb;
+      --text-color: #111827;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .contact-info {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    form {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent-color);
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f59e0b;
+    }
+
+    .back-home {
+      display: block;
+      margin: 3rem auto 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent-color);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home:hover {
+      background-color: #f59e0b;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Navigation -->
+  <header>
+    <div><a href="home page.html" style="color: white; text-decoration: none;"><strong>Chase Autos</strong></a></div>
+    <nav>
+      <a href="home page.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- 📞 Contact Section -->
+  <div class="container">
+    <div class="section-title">Get in Touch</div>
+
+    <div class="contact-info">
+      <p><strong>📍 Location:</strong> Ibadan, Oyo State, Nigeria</p>
+      <p><strong>📞 Phone:</strong> +234 9135060333</p>
+      <p><strong>📧 Email:</strong> chaseautos@gmail.com</p>
+      <p><strong>🕒 Hours:</strong> Mon–Sat, 9am–6pm</p>
+    </div>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <a href="home page.html" class="back-home">– Back to Home</a>
+  </div>
+
+  <!-- 📎 Footer -->
+  <footer>
+    © 2025 Autos Chase. All rights reserved.
+  </footer>
+
+</body>
+</html>

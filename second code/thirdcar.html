@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rolls-Royce Ghost - Chase Autos</title>
+  <style>
+    :root {
+      --primary-color: #1f2937;
+      --accent-color: #fbbf24;
+      --background-color: #f9fafb;
+      --text-color: #111827;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .car-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+      margin: 1rem 0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery img {
+      width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    .specs {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .specs ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .specs li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .back-home {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent-color);
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home:hover {
+      background-color: #f59e0b;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Navigation -->
+  <header>
+    <div><a href="home page.html" style="color: white; text-decoration: none;"><strong>Chase Autos</strong></a></div>
+    <nav>
+      <a href="home page.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <!-- 🚗 Car Detail Section -->
+  <div class="container">
+    <div class="car-title">Rolls-Royce Ghost (2021+)</div>
+    <img src="images/rolls-ghost-hero.jpg" alt="Rolls-Royce Ghost" class="hero-image" />
+    <div class="price">$400,000 USD</div>
+
+    <div>
+        <img src="thirdcar2.jpg" alt="thirdcar">
+    </div>
+
+    <div class="specs">
+      <h3>Specifications</h3>
+      <ul>
+        <li>Engine: 6.75L V12 Twin Turbo</li>
+        <li>Horsepower: 563 HP</li>
+        <li>Top Speed: 155 mph</li>
+        <li>Transmission: 8-speed automatic</li>
+        <li>Fuel Type: Petrol</li>
+        <li>Luxury Features: Massage seats, ambient lighting, starlight roof</li>
+      </ul>
+    </div>
+
+    <div class="description">
+      The Rolls-Royce Ghost is the ultimate expression of modern luxury. With its whisper-quiet ride, handcrafted interior, and commanding presence, it’s designed for those who demand elegance and performance. Every detail is tailored to perfection, making it one of the most refined vehicles on the road.
+    </div>
+
+    <a href="home page.html" class="back-home">– Back to Home</a>
+  </div>
+
+  <!-- 📎 Footer -->
+  <footer>
+    © 2025 Chase Autos. All rights reserved.
+  </footer>
+
+</body>
+</html>
